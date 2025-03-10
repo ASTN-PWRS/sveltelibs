@@ -1,0 +1,119 @@
+@charset "UTF-8";
+:root {
+  color-scheme: light dark;
+  --primary: light-dark(
+    color-mix(in srgb, #91b8f3 100%, white),
+    color-mix(in srgb, #91b8f3 40%, black)
+  );
+  --secondary: light-dark(
+    color-mix(in srgb, #47f11c 100%, white),
+    color-mix(in srgb, #47f11c 40%, black)
+  );
+  --success: light-dark(
+    color-mix(in srgb, #2a54c7 100%, white),
+    color-mix(in srgb, #2a54c7 40%, black)
+  );
+  --info: light-dark(
+    color-mix(in srgb, #2be9d9 100%, white),
+    color-mix(in srgb, #2be9d9 40%, black)
+  );
+  --warning: light-dark(
+    color-mix(in srgb, #ffc107 100%, white),
+    color-mix(in srgb, #ffc107 40%, black)
+  );
+  --error: light-dark(
+    color-mix(in srgb, #dc3545 100%, white),
+    color-mix(in srgb, #dc3545 40%, black)
+  );
+  --light: light-dark(
+    color-mix(in srgb, #f8f9fa 100%, white),
+    color-mix(in srgb, #f8f9fa 40%, black)
+  );
+  --dark: light-dark(
+    color-mix(in srgb, #343a40 100%, white),
+    color-mix(in srgb, #343a40 40%, black)
+  );
+  --base-font-size: 16px;
+}
+
+.light {
+  /* 強制的にライトモードにする */
+  color-scheme: light;
+}
+
+.dark {
+  /* 強制的にダークモードにする */
+  color-scheme: dark;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.scroll_bar {
+  overflow-y: scroll;
+}
+
+.scroll_bar::-webkit-scrollbar {
+  width: 7px;
+}
+
+.scroll_bar::-webkit-scrollbar-track {
+  background-color: #ccc;
+  border-radius: 50px;
+}
+
+.scroll_bar::-webkit-scrollbar-thumb {
+  background-color: #17585d;
+  border-radius: 50px;
+}
+
+h1,
+.h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2,
+.h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3,
+.h3 {
+  font-size: var(--font-size-h3);
+}
+
+h4,
+.h4 {
+  font-size: var(--font-size-h4);
+}
+
+h5,
+.h5 {
+  font-size: var(--font-size-h5);
+}
+
+h6,
+.h6 {
+  font-size: var(--font-size-h6);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  padding-right: 10px;
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=styles.css.map */

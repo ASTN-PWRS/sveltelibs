@@ -1,0 +1,32 @@
+$light-weight: 100%;
+$dark-weight: 40%;
+$theme-colors: (
+  primary: #91b8f3,
+  secondary: #2a54c7,
+  success: #2ab5c7,
+  info: #2be9d9,
+  warning: #ffc107,
+  error: #dc3545,
+  light: #f8f9fa,
+  dark: #343a40,
+);
+
+:root {
+  color-scheme: light dark;
+  @each $key, $color in $theme-colors {
+    --#{$key}: light-dark(
+      color-mix(in srgb, #{$color} #{$light-weight}, white),
+      color-mix(in srgb, #{$color} #{$dark-weight}, black)
+    );
+  }
+  --base-font-size: 16px;
+}
+
+.light {
+  /* 強制的にライトモードにする */
+  color-scheme: light;
+}
+.dark {
+  /* 強制的にダークモードにする */
+  color-scheme: dark;
+}

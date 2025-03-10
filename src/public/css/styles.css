@@ -1,0 +1,8 @@
+html {
+  font-size: var(--base-font-size);
+  box-sizing: border-box;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*# sourceMappingURL=styles.css.map */

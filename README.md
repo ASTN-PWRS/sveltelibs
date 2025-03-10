@@ -1,2 +1,3 @@
 # sveltelibs
-Stelte Web component library
+
+Stelte WebComponents library
